@@ -1,8 +1,6 @@
 <?php
-/**
- * Copyright © Magento, Inc. All rights reserved.
- * See COPYING.txt for license details.
- */
+declare(strict_types=1);
+
 namespace Snowdog\WishlistUnlocker\CustomerData;
 
 use Magento\Catalog\Helper\ImageFactory;
@@ -14,9 +12,7 @@ use Magento\Wishlist\Block\Customer\Sidebar;
 use Magento\Wishlist\CustomerData\Wishlist as MageWishlist;
 use Magento\Wishlist\Helper\Data;
 
-/**
- * Wishlist section
- */
+
 class Wishlist extends MageWishlist
 {
     const ITEMS_LIMIT_CONFIG = 'wishlist/general/items_limit';
@@ -51,7 +47,7 @@ class Wishlist extends MageWishlist
      *
      * @return array
      */
-    protected function getItems()
+    protected function getItems(): array
     {
         $this->view->loadLayout();
         $collection = $this->wishlistHelper->getWishlistItemCollection();
@@ -68,7 +64,7 @@ class Wishlist extends MageWishlist
     /**
      * @return int
      */
-    protected function getItemsLimit()
+    private function getItemsLimit(): int
     {
         return (int) $this->scopeConfig->getValue(
             self::ITEMS_LIMIT_CONFIG,
