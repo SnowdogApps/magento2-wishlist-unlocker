@@ -12,7 +12,6 @@ use Magento\Wishlist\Block\Customer\Sidebar;
 use Magento\Wishlist\CustomerData\Wishlist as MageWishlist;
 use Magento\Wishlist\Helper\Data;
 
-
 class Wishlist extends MageWishlist
 {
     const ITEMS_LIMIT_CONFIG = 'wishlist/general/items_limit';
