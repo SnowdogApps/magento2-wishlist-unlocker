@@ -1,6 +1,7 @@
 {
     "name": "snowdog/module-wishlist-unlocker",
-    "description": "",
+    "description": "Allows configuring the maximum number of items in wishlist",
+    "license": "MIT",
     "require": {
         "magento/module-wishlist": "*",
         "magento/magento-composer-installer": "*",
