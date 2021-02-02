@@ -1,6 +1,8 @@
 #Changelog
 
 ## [Unreleased]
+
+## 1.0.2
 - Make the module compatible with PHP 7.4
 
 ## 1.0.1
