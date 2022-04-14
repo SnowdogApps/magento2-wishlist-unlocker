@@ -1,6 +1,8 @@
 #Changelog
 
 ## [Unreleased]
+
+## 1.0.3
 - Make the module compatible with PHP 8.1
 
 ## 1.0.2
